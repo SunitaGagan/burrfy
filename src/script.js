@@ -15,11 +15,25 @@ function toggleAccordion(index) {
         icon.textContent = '−';
     }
 }
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const mobileIcon = document.getElementById("mobileIcon");
     const navbar = document.getElementById("navbar");
 
     mobileIcon.addEventListener("click", () => {
         navbar.classList.toggle("hidden");
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const currentPage = window.location.pathname.split("/").pop();
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    navLinks.forEach(link => {
+        const href = link.getAttribute("href");
+        if (href === currentPage) {
+            link.classList.add("active");
+        }
     });
 });

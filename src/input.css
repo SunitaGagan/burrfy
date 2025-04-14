@@ -44,24 +44,19 @@ body{
   
   }
 }
-@media screen and (min-width: 768px) {
-  
-  .vision-list >li{ width: 47%;
+@media screen and (min-width: 768px) {  
+  .vision-list >li{ 
     background-color: #fff;
     font-size:22px
 
   }
-  .vision-list >li:nth-child(odd) {
-    left: 0;
-    float: left;
+  .vision-list >li{
+   
     border-top-right-radius: 20%;
     border-bottom-right-radius: 20%;
   }
   
-  .vision-list >li:nth-child(even) {
-    right: 0;
-    float: right;
-  }
+  
 }
 .border-bgimg {
   position: relative;
@@ -106,7 +101,7 @@ bottom: -20px;
     @apply font-normal mb-8;
   }
   .bg-vision {
-   @apply bg-cover;
+   @apply bg-cover relative bg-no-repeat bg-center  rounded-[4rem] py-3;
     background-image: url('../images/bg-green-leaf.png');
   }
   .bg-testimonials {
@@ -133,7 +128,8 @@ bottom: -20px;
   .terms-condition h2,
   .terms-condition p,
   .terms-condition ul >li{
-    color:#333
+    color:#333;
+    font-size:1.313rem;
   }
   .terms-condition h1{
     margin-bottom: 4rem;
@@ -150,10 +146,30 @@ bottom: -20px;
     }
     .joinus-section img{
       width: 100%;
-    height: auto;
+      height: auto;
     }
   @media screen and (max-width: 1199px) {
     .terms-condition,
     .about-section,.contact-section {padding: 5.375rem 0;}
   }
+  footer p {
+    @apply mb-0;
+  }
+  .nav-link.active {
+    color: #fff;
+  background-color: #B7121F;
+  border-radius: 20px;
+  }
+  .ouline-btn{
+    @apply bg-brand text-white py-3 px-6 rounded-full text-lg mb-4 inline-block shadow-md
+    outline outline-offset-4 outline-brand;
+  }
+  .btn{
+    @apply bg-brand text-white font-semibold px-6 py-2 rounded-full transition duration-300;
+  }
+  .btn:hover{@apply bg-red-700 transition;}
+  .header-img{ @apply w-full h-auto;}
+  .right-header-img { @apply absolute right-0;}
+  .how-to-work p{ @apply mb-0}
+  .heading-two{@apply bg-white text-red-600 font-bold px-6 py-2 rounded-full shadow-lg text-lg block mx-auto w-40; }
   
