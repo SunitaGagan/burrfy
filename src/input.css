@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+  background-image: url('../images/bg.svg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+}
+
+
+.min-w-22{
+  min-width: 188px; 
+}
+.navbar a{
+  color: #333;
+  font-size: 21px;
+  transition: 0.2s ease-in all;
+}
+.navbar a:hover{
+  color: #fff;
+  background-color: #B7121F;
+  border-radius: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .line-right{
+    padding-right: 80px;
+    position: relative;
+  
+  }
+  .line-right::before{
+    content: "";
+      border-right: 1px solid #444;
+      position: absolute;
+      left: 0;
+      right: 40px;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+  
+  }
+}
+@media screen and (min-width: 768px) {
+  
+  .vision-list >li{ width: 47%;
+    background-color: #fff;
+    font-size:22px
+
+  }
+  .vision-list >li:nth-child(odd) {
+    left: 0;
+    float: left;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+  }
+  
+  .vision-list >li:nth-child(even) {
+    right: 0;
+    float: right;
+  }
+}
+.border-bgimg {
+  position: relative;
+    padding: 0 90px;
+    z-index: 9;
+}
+.border-bgimg::before {
+content: "";
+position: absolute;
+left: 0;
+background-image: url("../images/leaf-border.png");
+background-repeat: repeat-y;
+width: 55px;
+top: 0;
+z-index: 12;
+height: 100%;
+bottom: -20px;
+}
+.border-bgimg::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  background-image: url("../images/leaf-border.png");
+  background-repeat: repeat-y;
+  width: 55px;
+  top: 0;
+  z-index: 12;
+  height: 100%; 
+  }
+  .bg-red-drak{
+    background-color: #B7121F;
+  }
+  .heading-one {
+    @apply  text-brand font-beiruti font-medium;
+    font-size: 3.188rem;
+    line-height:3rem;
+    margin-bottom: 1.875rem;      
+  }
+  p{color: #333; 
+    font-size: 1.313rem;
+    line-height: 1.875rem;
+    @apply font-normal mb-8;
+  }
+  .bg-vision {
+   @apply bg-cover;
+    background-image: url('../images/bg-green-leaf.png');
+  }
+  .bg-testimonials {
+    @apply bg-cover;
+    background-image: url('../images/testimonials-bg.png');
+  }
+  .drop-nav a{
+    font-size: 21px;
+  }
+  .logo-s{
+    width: 11.75rem;
+    @apply h-auto;
+  }
+  @media screen and (max-width: 1199px) {
+    .logo-s{
+      width: 8rem;
+    }
+  }
+  .terms-condition,
+  .about-section,
+  .contact-section {
+    padding:5.375rem 0;   
+  }
+  .terms-condition h2,
+  .terms-condition p,
+  .terms-condition ul >li{
+    color:#333
+  }
+  .terms-condition h1{
+    margin-bottom: 4rem;
+  }
+  .terms-condition h2{ margin-bottom: 1rem;}
+  .bgbuttom{position: relative;
+    margin-top: -300px;
+    z-index: 0;}
+    .joinus-section h2{
+      @apply font-bold mb-8;
+    }
+    .joinus-section p{
+      @apply mb-10
+    }
+    .joinus-section img{
+      width: 100%;
+    height: auto;
+    }
+  @media screen and (max-width: 1199px) {
+    .terms-condition,
+    .about-section,.contact-section {padding: 5.375rem 0;}
+  }
+  

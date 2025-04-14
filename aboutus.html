@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>burrfy</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <script src="./src/script.js"></script>
+    <link href="./src/owl.carousel.min.css" rel="stylesheet">
+    <script src="./src/jquery.min.js"></script>
+    <script src="./src/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+</head>
+
+<body>
+
+    <nav class="sticky shadow-md top-0 z-50  bg-gray-300/80 py-2 flex flex-wrap w-full items-center justify-between">
+        <div class="container mx-auto relative px-5 md:px-0">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="images/logo.png" alt="Logo" class="logo-s" />
+            </div>
+            <svg id="mobileIcon" class="h-8 w-8 cursor-pointer absolute right-4 z-20 top-2 md:hidden text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">  <line x1="17" y1="10" x2="3" y2="10" />  <line x1="21" y1="6" x2="3" y2="6" />  <line x1="21" y1="14" x2="3" y2="14" />  <line x1="17" y1="18" x2="3" y2="18" /></svg>
+            <div class=" hidden w-full md:flex items-center md:w-auto md:justify-center md:absolute md:left-0 md:right-0 md:top-3" id="navbar">
+                <ul class="md:flex md:justify-between pt-4 text-gray-50 md:pt-0 navbar">
+                    <li> <a href="index.html" class="block md:px-7 py-2  hover:text-brand"> Home </a></li>
+                    <li> <a href="#" class="block md:px-7 py-2  hover:text-brand"> Browse web </a></li>
+                    <li> <a href="aboutus.html" class="block md:px-7 py-2  hover:text-brand"> About us</a></li>
+                    <li> <a href="contactus.html" class="block md:px-7 py-2  hover:text-brand"> Contact us </a></li>
+                </ul>
+
+                <div class="md:absolute group drop-nav md:right-0  ">
+                    <a class="bg-red-600 text-white px-4 py-2 rounded-full flex items-center gap-1 hover:bg-red-700 transition">
+                    Kitchen
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7" />
+                    </svg>
+                     </a>
+                    <div class="absolute hidden group-hover:block bg-gray-300/50 shadow-md rounded-md mt-2 py-2 w-40 text-sm z-10">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Sign in</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Sign up</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- start about section-->
+    <section class="about-section">
+        <div class="container mx-auto px-5 md:px-0">
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-12 md:col-span-5 lg:pr-6">
+                    <div class="grid grid-cols-12 gap-8">
+                        <div class="col-span-6">
+                            <div class="w-full bg-rose-500 text-white rounded-full px-6 py-10 text-center flex flex-col items-center justify-center aspect-[2/3] mb-3">
+                                <div class="text-3xl font-bold mb-2">B</div>
+                                <div class="text-lg font-semibold">Bite</div>
+                                <div class="text-lg font-semibold mb-4">Sized</div>
+                                <p class="text-sm leading-relaxed text-white">
+                                    Experience food that's not just a meal but a delightful, bite-sized adventure every time.
+                                </p>
+                            </div>
+                            <div class="w-full bg-rose-500 text-white rounded-full px-6 py-10 text-center flex flex-col items-center justify-center aspect-[2/3] mb-3">
+                                <div class="text-3xl font-bold mb-2">B</div>
+                                <div class="text-lg font-semibold">Bite</div>
+                                <div class="text-lg font-semibold mb-4">Sized</div>
+                                <p class="text-sm leading-relaxed text-white">
+                                    Experience food that's not just a meal but a delightful, bite-sized adventure every time.
+                                </p>
+                            </div>
+                            <div class="w-full bg-rose-500 text-white rounded-full px-6 py-10 text-center flex flex-col items-center justify-center aspect-[2/3] mb-3">
+                                <div class="text-3xl font-bold mb-2">B</div>
+                                <div class="text-lg font-semibold">Bite</div>
+                                <div class="text-lg font-semibold mb-4">Sized</div>
+                                <p class="text-sm leading-relaxed text-white">
+                                    Experience food that's not just a meal but a delightful, bite-sized adventure every time.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-span-6">
+                            <div class="w-full bg-rose-500 text-white rounded-full px-6 py-10 text-center flex flex-col items-center justify-center aspect-[2/3] mb-3 mt-[100px]">
+                                <div class="text-3xl font-bold mb-2">B</div>
+                                <div class="text-lg font-semibold">Bite</div>
+                                <div class="text-lg font-semibold mb-4">Sized</div>
+                                <p class="text-sm leading-relaxed text-white">
+                                    Experience food that's not just a meal but a delightful, bite-sized adventure every time.
+                                </p>
+                            </div>
+                            <div class="w-full bg-rose-500 text-white rounded-full px-6 py-10 text-center flex flex-col items-center justify-center aspect-[2/3] mb-3">
+                                <div class="text-3xl font-bold mb-2">B</div>
+                                <div class="text-lg font-semibold">Bite</div>
+                                <div class="text-lg font-semibold mb-4">Sized</div>
+                                <p class="text-sm leading-relaxed text-white">
+                                    Experience food that's not just a meal but a delightful, bite-sized adventure every time.
+                                </p>
+                            </div>
+                            <div class="w-full bg-rose-500 text-white rounded-full px-6 py-10 text-center flex flex-col items-center justify-center aspect-[2/3] mb-3">
+                                <div class="text-3xl font-bold mb-2">B</div>
+                                <div class="text-lg font-semibold">Bite</div>
+                                <div class="text-lg font-semibold mb-4">Sized</div>
+                                <p class="text-sm leading-relaxed text-white">
+                                    Experience food that's not just a meal but a delightful, bite-sized adventure every time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-span-12 md:col-span-7">
+                    <div class="">
+                        <h1 class="heading-one"> Bringing Ultimate <br/>Recipes & Real Flavour to You </h1>
+                        <p> Burrfy app is a medium that connects the consumer and the home cook, in which the consumer will never feel outside, will feel that the food is prepared at his own home, delicious and will have a sense of purpose. It is our hope
+                            that our kitchen will be prepared in the same way as a mother, sister, wife cooks in our house with the feeling that our people will like and satisfy them. For that we include the kitchen registered here in the condition.</p>
+                        <div class="border"></div>
+                        <h1 class="heading-one"> Why choose Burrfy?</h1>
+                        <p> At Burrfy, we're revolutionizing the food delivery experience by focusing on quality, convenience, and personalized service. Whether you’re craving a quick snack or a gourmet meal, Burrfy is your go-to food app for discovering
+                            new Kitchen, ordering meals, and having them delivered right to your door in no time.</p>
+                    </div>
+                    <div class="grid grid-cols-12 gap-4">
+                        <div class="col-span-12 md:col-span-7">
+                            <div class="w-full p-6 bg-red-500 text-white rounded-xl shadow-lg">
+                                <h2 class="text-xl font-semibold mb-4 text-center"> Dietary Preferences</h2>
+                                <p class="text-sm leading-relaxed text-white">
+                                    We ensure that all food vendors participating in the platform adhere to local food safety standards and health regulations. Vendors are required to maintain proper hygiene practices during food preparation and delivery, including using clean and sanitized
+                                    tools, equipment, and packaging. All delivery personnel are trained to follow strict hygiene protocols, including wearing gloves and masks during food handling and delivery.
+                                </p>
+                            </div>
+
+                            <div class="w-full p-6 bg-red-500 text-white rounded-xl shadow-lg mt-7">
+                                <h2 class="text-xl font-semibold mb-4 text-center">Nutritional Information</h2>
+                                <p class="text-sm leading-relaxed text-white">
+                                    Each menu item displayed on the platform includes a detailed list of ingredients, caloric content, macronutrients, and potential allergens. We recommend that users review this information carefully, especially those with food allergies or specific dietary
+                                    restrictions. The platform is not responsible for the accuracy of this information provided by the food vendors, and we encourage users to consult with their healthcare provider before making dietary changes.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-5">
+                            <div class="w-full p-6 bg-red-500 text-white rounded-xl shadow-lg">
+                                <h2 class="text-xl font-semibold mb-4 text-center"> Dietary Preferences</h2>
+                                <p class="text-sm leading-relaxed text-white">
+                                    Users can filter and customize food choices based on dietary preferences (e.g., vegetarian, vegan, gluten-free). Please note that cross-contamination may occur, and we cannot guarantee that a meal is 100% free from certain allergens.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section>
+        <div class="container mx-auto px-5 md:px-0">
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-12 md:col-span-6">
+                    <h1 class="heading-one"> Our Team </h1>
+                    <p> Meet our dedicated team of food lovers and tech enthusiasts who work tirelessly to ensure a seamless experience for our users!</p>
+
+                </div>
+            </div>
+
+            <div class="grid grid-cols-12 gap-9">
+                <div class="col-span-12 md:col-span-4">
+                    <div class="bg-white  rounded-2xl shadow-lg p-6 text-center relative">
+                        <!-- Leaf background -->
+                        <div class="absolute top-0 right-0 w-1/2 h-1/3 overflow-hidden rounded-tr-2xl">
+                            <img src="images/left-team.png" alt="Leaf" class="w-full h-full object-cover opacity-70">
+                        </div>
+
+                        <!-- Profile Image -->
+                        <div class="relative z-10 mt-6">
+                            <div class="inline-block p-1 border-4 border-red-500 rounded-lg bg-white">
+                                <img src="images/emplyee.jpg" alt="Profile" class="w-16 h-16 object-cover rounded-lg">
+                            </div>
+                        </div>
+
+                        <!-- Divider -->
+                        <div class="flex items-center justify-center mt-3 mb-1">
+                            <span class="h-px w-10 bg-red-500"></span>
+                            <span class="mx-2 text-red-500">•</span>
+                            <span class="h-px w-10 bg-red-500"></span>
+                        </div>
+
+                        <!-- Name & Designation -->
+                        <h2 class="text-red-500 text-lg font-semibold">Name</h2>
+                        <p class="text-red-400 text-sm mb-4">Designation</p>
+
+                        <!-- Description -->
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sit voluptatem accusantium doloremque laudantium
+                        </p>
+
+                        <!-- LinkedIn Icon -->
+                        <div class="flex justify-center">
+                            <a href="#" class="inline-block">
+                                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-6 h-6">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 md:col-span-4">
+                    <div class="bg-white  rounded-2xl shadow-lg p-6 text-center relative">
+                        <!-- Leaf background -->
+                        <div class="absolute top-0 right-0 w-1/2 h-1/3 overflow-hidden rounded-tr-2xl">
+                            <img src="images/left-team.png" alt="Leaf" class="w-full h-full object-cover opacity-70">
+                        </div>
+
+                        <!-- Profile Image -->
+                        <div class="relative z-10 mt-6">
+                            <div class="inline-block p-1 border-4 border-red-500 rounded-lg bg-white">
+                                <img src="images/emplyee.jpg" alt="Profile" class="w-16 h-16 object-cover rounded-lg">
+                            </div>
+                        </div>
+
+                        <!-- Divider -->
+                        <div class="flex items-center justify-center mt-3 mb-1">
+                            <span class="h-px w-10 bg-red-500"></span>
+                            <span class="mx-2 text-red-500">•</span>
+                            <span class="h-px w-10 bg-red-500"></span>
+                        </div>
+
+                        <!-- Name & Designation -->
+                        <h2 class="text-red-500 text-lg font-semibold">Name</h2>
+                        <p class="text-red-400 text-sm mb-4">Designation</p>
+
+                        <!-- Description -->
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sit voluptatem accusantium doloremque laudantium
+                        </p>
+
+                        <!-- LinkedIn Icon -->
+                        <div class="flex justify-center">
+                            <a href="#" class="inline-block">
+                                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-6 h-6">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 md:col-span-4">
+                    <div class="bg-white  rounded-2xl shadow-lg p-6 text-center relative">
+                        <!-- Leaf background -->
+                        <div class="absolute top-0 right-0 w-1/2 h-1/3 overflow-hidden rounded-tr-2xl">
+                            <img src="images/left-team.png" alt="Leaf" class="w-full h-full object-cover opacity-70">
+                        </div>
+
+                        <!-- Profile Image -->
+                        <div class="relative z-10 mt-6">
+                            <div class="inline-block p-1 border-4 border-red-500 rounded-lg bg-white">
+                                <img src="images/emplyee.jpg" alt="Profile" class="w-16 h-16 object-cover rounded-lg">
+                            </div>
+                        </div>
+
+                        <!-- Divider -->
+                        <div class="flex items-center justify-center mt-3 mb-1">
+                            <span class="h-px w-10 bg-red-500"></span>
+                            <span class="mx-2 text-red-500">•</span>
+                            <span class="h-px w-10 bg-red-500"></span>
+                        </div>
+
+                        <!-- Name & Designation -->
+                        <h2 class="text-red-500 text-lg font-semibold">Name</h2>
+                        <p class="text-red-400 text-sm mb-4">Designation</p>
+
+                        <!-- Description -->
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sit voluptatem accusantium doloremque laudantium
+                        </p>
+
+                        <!-- LinkedIn Icon -->
+                        <div class="flex justify-center">
+                            <a href="#" class="inline-block">
+                                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-6 h-6">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="relative z-10 pt-10 joinus-section">
+        <div class="container mx-auto px-5 md:px-0">
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-12 md:col-span-6">
+                    <h2 class="heading-one"> Join Us </h2>
+                    <p> Whether you’re looking to indulge in a delicious meal or you’re a cook interested in joining our platform, we invite you to be a part of the Burrfy community! </p>
+                    <ul class="flex">
+                        <li class="mr-6">
+                            <a href="#"> <img src="images/android-icon.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"> <img src="images/web-brpuser-icon.png" alt="" /> </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-span-12 md:col-span-6">
+                    <img src="images/img-app.png" alt="" />
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="bgbuttom">
+        <div> <img src="images/bg-img.png" alt="" /> </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-gray-100 text-black py-10 px-6">
+        <div class="container mx-auto px-5 md:px-0">
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-12 md:col-span-4 ">
+                    <!-- Logo and Description -->
+                    <div class="space-y-4 line-right">
+
+                        <img src="images/logo.png" alt="Burrfy Logo" class="min-w-28 h-auto" />
+
+
+                        <p class="text-xl text-gray-700 text-justify">
+                            Burrfy app is a medium that connects the consumer and the home cook, in which the consumer will never feel outside, will feel that the food is prepared at his own home, delicious.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-span-12 md:col-span-5 flex line-right">
+                    <!-- Quick Links -->
+                    <div class="w-1/2">
+                        <h3 class="text-red-600 font-semibold mb-3 text-xl">Quick Links</h3>
+                        <ul class="space-y-2 text-gray-800 text-xl">
+                            <li class="mb-3"><a href="aboutus.html" class="hover:underline">About Us</a></li>
+                            <li class="mb-3"><a href="#" class="hover:underline">Privacy Policy</a></li>
+                            <li class="mb-3"><a href="terms-and-conditions.html" class="hover:underline">Terms and <br>Conditions</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Us -->
+                    <div class="md:pl-6 w-1/2">
+                        <h3 class="text-red-600 font-semibold mb-3 text-xl">Contact Us</h3>
+                        <p class="text-xl text-gray-800 ">122, HB Estate, Near Sonegaon Lake, Sonegaon, Nagpur.</p>
+                        <p class="text-xl text-gray-800 mt-2">support@burrfy.com</p>
+                        <p class="text-xl text-gray-800 mt-2">+91 88550 12291</p>
+                    </div>
+                </div>
+                <div class="col-span-12 md:col-span-3">
+                    <!-- Social and Newsletter -->
+                    <div class="space-y-4">
+                        <h3 class="text-red-600 font-semibold text-xl">Stay up to date</h3>
+                        <div class="flex gap-3 text-xl">
+                            <ul class="flex justify-center py-1">
+                                <li class="mr-8">
+                                    <a href="#" title="Facebook" class="text-blue-600 hover:scale-110 transition block">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="mr-8">
+                                    <a href="#" title="instagram" class="text-pink-500 hover:scale-110 transition block"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li class="mr-8">
+                                    <a href="#" title="twitter" class="text-blue-400 hover:scale-110 transition block"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="mr-8"> <a href="#" title="youtube" class="text-red-600 hover:scale-110 transition block"><i class="fab fa-youtube"></i></a></li>
+                                <li>
+                                    <a href="#" title="pinterest" class="text-red-400 hover:scale-110 transition block"><i class="fab fa-pinterest"></i></a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                        <button type="button" class="bg-red-600 text-white rounded-full px-5 py-2 text-xl hover:bg-red-700 transition">Subscribe to newsletter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Bottom Bar -->
+        <div class="mt-10 text-center text-red-600 text-xl">
+            © Burrfy
+        </div>
+    </footer>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
+    </script>
+
+
+</body>
+
+</html>
