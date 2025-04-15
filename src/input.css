@@ -11,8 +11,6 @@ body{
   background-repeat:no-repeat;
   background-attachment: fixed;
 }
-
-
 .min-w-22{
   min-width: 188px; 
 }
@@ -47,21 +45,20 @@ body{
 @media screen and (min-width: 768px) {  
   .vision-list >li{ 
     background-color: #fff;
-    font-size:22px
-
+    font-size:22px;
+    
   }
-  .vision-list >li{
-   
-    border-top-right-radius: 20%;
-    border-bottom-right-radius: 20%;
-  }
-  
-  
+  .vision-list >li p{margin-bottom: 0; @apply text-xl; }
+  .vision-left li{ padding:20px 70px 20px 20px; @apply text-left;}
+  .vision-right{ margin-top: 50px; @apply text-right;}
+  .vision-right li{ padding:20px 20px 20px 70px;}
+  .vision-list{ margin-bottom: 30px;}
+  .vision-list>li{ margin-bottom: 50px;}
 }
 .border-bgimg {
   position: relative;
-    padding: 0 90px;
-    z-index: 9;
+  padding: 0 90px;
+  z-index: 9;
 }
 .border-bgimg::before {
 content: "";
@@ -90,10 +87,10 @@ bottom: -20px;
     background-color: #B7121F;
   }
   .heading-one {
-    @apply  text-brand font-beiruti font-medium;
-    font-size: 3.188rem;
+    @apply  text-brand font-beiruti font-bold;
+    font-size: 3.75rem;
     line-height:3rem;
-    margin-bottom: 1.875rem;      
+    margin-bottom: 1.875rem;
   }
   p{color: #333; 
     font-size: 1.313rem;
@@ -105,8 +102,27 @@ bottom: -20px;
     background-image: url('../images/bg-green-leaf.png');
   }
   .bg-testimonials {
-    @apply bg-cover;
+    @apply bg-cover rounded-l-[70px] py-10  pl-10 relative;
     background-image: url('../images/testimonials-bg.png');
+  }
+  .right-side-carousel{
+    @apply absolute right-0 w-[62%]
+  }
+  .right-side-carousel:before,
+  .right-side-carousel::after{
+    @apply w-[100px] h-[100px] absolute; 
+    
+  }
+  .right-side-carousel:before{ 
+    content:"";
+   @apply -left-[90px] -top-[100px];
+    background-image: url('../images/quotation-top.png');
+    
+  }
+  .right-side-carousel::after { 
+    content:"";   
+    background-image: url('../images/quotation-bottom.png');
+    @apply bottom-0 right-0;  
   }
   .drop-nav a{
     font-size: 21px;
@@ -119,6 +135,9 @@ bottom: -20px;
     .logo-s{
       width: 8rem;
     }
+  }
+  .vision-list h3{
+    @apply text-xl text-brand mb-2; 
   }
   .terms-condition,
   .about-section,
@@ -165,11 +184,38 @@ bottom: -20px;
     outline outline-offset-4 outline-brand;
   }
   .btn{
-    @apply bg-brand text-white font-semibold px-6 py-2 rounded-full transition duration-300;
+    @apply bg-brand text-white font-semibold px-8 py-4 rounded-full transition duration-300;
   }
   .btn:hover{@apply bg-red-700 transition;}
-  .header-img{ @apply w-full h-auto;}
-  .right-header-img { @apply absolute right-0;}
-  .how-to-work p{ @apply mb-0}
-  .heading-two{@apply bg-white text-red-600 font-bold px-6 py-2 rounded-full shadow-lg text-lg block mx-auto w-40; }
   
+  .how-to-work{@apply relative;}
+  .how-to-work p{ @apply mb-0;}
+  .heading-three{@apply absolute z-10 left-0;
+    right: 90px;
+    z-index: 10;
+    top: 50%;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 51px;
+    color: #444;
+    font-weight: bold; line-height: 51px;}
+  .right-heading-block { @apply relative;}
+  .heading-two{@apply bg-white text-red-600 font-bold px-6 py-2 rounded-full shadow-lg text-lg block mx-auto w-44 text-2xl mt-4; }
+  .owl-carousel.bg-testimonials .item img {
+    @apply w-10 h-10;
+  }
+  
+  @media screen and (min-width: 1199px) {
+    .bg-right {
+      @apply absolute right-0 ;
+    }
+    .left-bg{
+      @apply absolute left-0 bottom-0;
+    }
+    .testimonials{
+      @apply h-[700px] relative;
+    }
+    .header-img{ @apply w-full h-auto;}
+  .right-header-img { @apply absolute right-0;}
+  }
