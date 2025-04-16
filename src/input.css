@@ -42,16 +42,16 @@ body{
   
   }
 }
+.vision-list >li{ 
+  background-color: #fff;
+  font-size:22px;    
+}
 @media screen and (min-width: 768px) {  
-  .vision-list >li{ 
-    background-color: #fff;
-    font-size:22px;
-    
-  }
+  
   .vision-list >li p{margin-bottom: 0; @apply text-xl; }
-  .vision-left li{ padding:20px 70px 20px 20px; @apply text-left;}
+  .vision-left li{ padding:20px 40px 20px 20px; @apply text-left;}
   .vision-right{ margin-top: 50px; @apply text-right;}
-  .vision-right li{ padding:20px 20px 20px 70px;}
+  .vision-right li{ padding:20px 20px 20px 40px;}
   .vision-list{ margin-bottom: 30px;}
   .vision-list>li{ margin-bottom: 50px;}
 }
@@ -102,12 +102,10 @@ bottom: -20px;
     background-image: url('../images/bg-green-leaf.png');
   }
   .bg-testimonials {
-    @apply bg-cover rounded-l-[70px] py-10  pl-10 relative;
-    background-image: url('../images/testimonials-bg.png');
+     background-image: url('../images/testimonials-bg.png');
+     position: relative;
   }
-  .right-side-carousel{
-    @apply absolute right-0 w-[62%]
-  }
+  .testimonials { position: relative;}
   .right-side-carousel:before,
   .right-side-carousel::after{
     @apply w-[100px] h-[100px] absolute; 
@@ -154,8 +152,7 @@ bottom: -20px;
     margin-bottom: 4rem;
   }
   .terms-condition h2{ margin-bottom: 1rem;}
-  .bgbuttom{position: relative;
-    margin-top: -300px;
+  .bgbuttom{position: relative;   
     z-index: 0;}
     .joinus-section h2{
       @apply font-bold mb-8;
@@ -181,9 +178,9 @@ bottom: -20px;
   }
   .ouline-btn{
     @apply bg-brand text-white py-3 px-6 rounded-full text-lg mb-4 inline-block shadow-md
-    outline outline-offset-4 outline-brand;
+    outline outline-offset-8 outline-brand outline-1;
   }
-  .btn{
+  .btn {
     @apply bg-brand text-white font-semibold px-8 py-4 rounded-full transition duration-300;
   }
   .btn:hover{@apply bg-red-700 transition;}
@@ -206,16 +203,58 @@ bottom: -20px;
     @apply w-10 h-10;
   }
   
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: 768px) {
+    .bg-testimonials {
+      @apply bg-cover rounded-l-[70px] py-10  pl-10 relative;
+    }
+    .right-side-carousel{
+      @apply absolute right-0 w-[62%]
+    }
     .bg-right {
       @apply absolute right-0 ;
     }
+    .bg-right > img, .left-bg >img{
+      width: 85%;
+      height: auto;
+    }
     .left-bg{
       @apply absolute left-0 bottom-0;
-    }
-    .testimonials{
-      @apply h-[700px] relative;
-    }
+    } 
+   
     .header-img{ @apply w-full h-auto;}
-  .right-header-img { @apply absolute right-0;}
+   .right-header-img { @apply absolute right-0 left-[40%];}
+  }
+  @media  (max-width: 1023px) and (min-width: 768px) {
+    .heading-one{ font-size: 2.75rem; line-height: 2.75rem;}
+    .navbar a, .drop-nav a{ font-size: 1.125rem;}  
+    
+
+  }
+  @media (max-width: 1023px){
+    .right-heading-block img {
+      @apply hidden;      
+    }
+    .heading-three {
+      @apply w-full relative mb-9;
+    }
+  .bgbuttom{ margin-top: -100px;}
+
+  }
+  @media (min-width: 1024px){
+  .bgbuttom{ margin-top: -300px;}
+  }
+  @media(max-width:767px){
+    .navbar a{ display: block; text-align: center;}
+  .bg-testimonials {@apply bg-cover rounded-[50px] py-10  px-10 relative;}
+  .testimonials h1{ text-align: center;}
+  .testimonials br{ @apply hidden;}
+  .right-side-carousel{ @apply relative mb-10 mt-11;}
+  .right-side-carousel::before{ @apply left-0;}
+  
+  .vision-left{@apply mt-6;}
+  .vision-list >li{@apply rounded-full p-6 mb-4 text-center; }
+  .bg-vision{@apply p-6;}
+}
+.border-bg{ background-image: url(../images/border-horizontal.png);  background-repeat: repeat-x; height: 53px; margin-bottom: 30px;}
+  @media  (max-width: 1279px) and (min-width: 1024px) {
   }

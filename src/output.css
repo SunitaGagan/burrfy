@@ -642,6 +642,10 @@ video {
   grid-column: span 6 / span 6;
 }
 
+.col-span-4{
+  grid-column: span 4 / span 4;
+}
+
 .mx-2{
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -728,16 +732,16 @@ video {
   margin-top: 0.75rem;
 }
 
+.mt-4{
+  margin-top: 1rem;
+}
+
 .mt-5{
   margin-top: 1.25rem;
 }
 
 .mt-6{
   margin-top: 1.5rem;
-}
-
-.mt-7{
-  margin-top: 1.75rem;
 }
 
 .mt-8{
@@ -750,6 +754,10 @@ video {
 
 .mt-\[120px\]{
   margin-top: 120px;
+}
+
+.mt-\[70px\]{
+  margin-top: 70px;
 }
 
 .block{
@@ -1148,9 +1156,13 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.py-\[100px\]{
-  padding-top: 100px;
-  padding-bottom: 100px;
+.py-\[50px\]{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.pb-10{
+  padding-bottom: 2.5rem;
 }
 
 .pl-7{
@@ -1165,20 +1177,12 @@ video {
   padding-top: 2.5rem;
 }
 
-.pt-12{
-  padding-top: 3rem;
-}
-
 .pt-4{
   padding-top: 1rem;
 }
 
 .pt-8{
   padding-top: 2rem;
-}
-
-.pt-\[140px\]{
-  padding-top: 140px;
 }
 
 .pt-\[60px\]{
@@ -1358,10 +1362,6 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.filter{
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .transition{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1426,12 +1426,12 @@ body{
   }
 }
 
-@media screen and (min-width: 768px) {
-  .vision-list >li{
-    background-color: #fff;
-    font-size:22px;
-  }
+.vision-list >li{
+  background-color: #fff;
+  font-size:22px;
+}
 
+@media screen and (min-width: 768px) {
   .vision-list >li p{
     margin-bottom: 0;
     font-size: 1.25rem;
@@ -1439,7 +1439,7 @@ body{
   }
 
   .vision-left li{
-    padding:20px 70px 20px 20px;
+    padding:20px 40px 20px 20px;
     text-align: left;
   }
 
@@ -1449,7 +1449,7 @@ body{
   }
 
   .vision-right li{
-    padding:20px 20px 20px 70px;
+    padding:20px 20px 20px 40px;
   }
 
   .vision-list{
@@ -1525,21 +1525,13 @@ p{
   background-image: url('../images/bg-green-leaf.png');
 }
 
-.bg-testimonials{
-  position: relative;
-  border-top-left-radius: 70px;
-  border-bottom-left-radius: 70px;
-  background-size: cover;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-  padding-left: 2.5rem;
+.bg-testimonials {
   background-image: url('../images/testimonials-bg.png');
+  position: relative;
 }
 
-.right-side-carousel{
-  position: absolute;
-  right: 0px;
-  width: 62%;
+.testimonials {
+  position: relative;
 }
 
 .right-side-carousel:before,
@@ -1609,7 +1601,6 @@ p{
 
 .bgbuttom{
   position: relative;
-  margin-top: -300px;
   z-index: 0;
 }
 
@@ -1662,7 +1653,8 @@ footer p{
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   outline-style: solid;
-  outline-offset: 4px;
+  outline-width: 1px;
+  outline-offset: 8px;
   outline-color: #B7121F;
 }
 
@@ -1749,21 +1741,37 @@ footer p{
   width: 2.5rem;
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 768px) {
+  .bg-testimonials{
+    position: relative;
+    border-top-left-radius: 70px;
+    border-bottom-left-radius: 70px;
+    background-size: cover;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 2.5rem;
+  }
+
+  .right-side-carousel{
+    position: absolute;
+    right: 0px;
+    width: 62%;
+  }
+
   .bg-right{
     position: absolute;
     right: 0px;
+  }
+
+  .bg-right > img, .left-bg >img{
+    width: 85%;
+    height: auto;
   }
 
   .left-bg{
     position: absolute;
     left: 0px;
     bottom: 0px;
-  }
-
-  .testimonials{
-    position: relative;
-    height: 700px;
   }
 
   .header-img{
@@ -1774,7 +1782,101 @@ footer p{
   .right-header-img{
     position: absolute;
     right: 0px;
+    left: 40%;
   }
+}
+
+@media  (max-width: 1023px) and (min-width: 768px) {
+  .heading-one{
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+  }
+
+  .navbar a, .drop-nav a{
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 1023px){
+  .right-heading-block img{
+    display: none;
+  }
+
+  .heading-three{
+    position: relative;
+    margin-bottom: 2.25rem;
+    width: 100%;
+  }
+
+  .bgbuttom{
+    margin-top: -100px;
+  }
+}
+
+@media (min-width: 1024px){
+  .bgbuttom{
+    margin-top: -300px;
+  }
+}
+
+@media(max-width:767px){
+  .navbar a{
+    display: block;
+    text-align: center;
+  }
+
+  .bg-testimonials{
+    position: relative;
+    border-radius: 50px;
+    background-size: cover;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .testimonials h1{
+    text-align: center;
+  }
+
+  .testimonials br{
+    display: none;
+  }
+
+  .right-side-carousel{
+    position: relative;
+    margin-bottom: 2.5rem;
+    margin-top: 2.75rem;
+  }
+
+  .right-side-carousel::before{
+    left: 0px;
+  }
+
+  .vision-left{
+    margin-top: 1.5rem;
+  }
+
+  .vision-list >li{
+    margin-bottom: 1rem;
+    border-radius: 9999px;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .bg-vision{
+    padding: 1.5rem;
+  }
+}
+
+.border-bg{
+  background-image: url(../images/border-horizontal.png);
+  background-repeat: repeat-x;
+  height: 53px;
+  margin-bottom: 30px;
+}
+
+@media  (max-width: 1279px) and (min-width: 1024px) {
 }
 
 .hover\:scale-110:hover{
@@ -1872,8 +1974,8 @@ footer p{
     display: none;
   }
 
-  .md\:h-\[700px\]{
-    height: 700px;
+  .md\:h-\[590px\]{
+    height: 590px;
   }
 
   .md\:w-auto{
@@ -1897,6 +1999,11 @@ footer p{
     padding-right: 0px;
   }
 
+  .md\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .md\:px-7{
     padding-left: 1.75rem;
     padding-right: 1.75rem;
@@ -1912,6 +2019,14 @@ footer p{
 
   .md\:pt-0{
     padding-top: 0px;
+  }
+
+  .md\:pt-12{
+    padding-top: 3rem;
+  }
+
+  .md\:pt-\[246px\]{
+    padding-top: 246px;
   }
 
   .md\:pt-\[40px\]{
@@ -1932,8 +2047,42 @@ footer p{
     grid-column: span 5 / span 5;
   }
 
-  .lg\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .lg\:col-span-6{
+    grid-column: span 6 / span 6;
+  }
+
+  .lg\:col-span-7{
+    grid-column: span 7 / span 7;
+  }
+
+  .lg\:col-span-8{
+    grid-column: span 8 / span 8;
+  }
+
+  .lg\:block{
+    display: block;
+  }
+
+  .lg\:h-\[600px\]{
+    height: 600px;
+  }
+
+  .lg\:h-\[700px\]{
+    height: 700px;
+  }
+
+  .lg\:max-w-\[350px\]{
+    max-width: 350px;
+  }
+
+  .lg\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .lg\:px-7{
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
   }
 
   .lg\:pr-6{
@@ -1942,5 +2091,15 @@ footer p{
 
   .lg\:pt-12{
     padding-top: 3rem;
+  }
+
+  .lg\:pt-\[140px\]{
+    padding-top: 140px;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:block{
+    display: block;
   }
 }
