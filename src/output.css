@@ -642,10 +642,6 @@ video {
   grid-column: span 6 / span 6;
 }
 
-.col-span-4{
-  grid-column: span 4 / span 4;
-}
-
 .mx-2{
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -1761,6 +1757,14 @@ footer p{
   .bg-right{
     position: absolute;
     right: 0px;
+  }
+
+  .bg-right > img{
+    margin-left: auto;
+  }
+
+  .left-bg >img{
+    margin-right: auto;
   }
 
   .bg-right > img, .left-bg >img{
