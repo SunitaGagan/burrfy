@@ -187,8 +187,9 @@ bottom: -20px;
   
   .how-to-work{@apply relative;}
   .how-to-work p{ @apply mb-0;}
-  .heading-three{@apply absolute z-10 left-0;
-    right: 90px;
+  .heading-three{@apply absolute z-10 ;
+    left:14%;
+    right: auto;
     z-index: 10;
     top: 50%;
     bottom: 0;

@@ -1683,8 +1683,8 @@ footer p{
 
 .heading-three{
   position: absolute;
-  left: 0px;
-  right: 90px;
+  left:14%;
+  right: auto;
   z-index: 10;
   top: 50%;
   bottom: 0;
@@ -2069,8 +2069,8 @@ footer p{
     height: 700px;
   }
 
-  .lg\:max-w-\[350px\]{
-    max-width: 350px;
+  .lg\:max-w-\[300px\]{
+    max-width: 300px;
   }
 
   .lg\:px-0{
