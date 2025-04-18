@@ -259,7 +259,11 @@ bottom: -20px;
     right: auto;
     z-index: 10;
     top: 50%;
-    bottom: 0;}
+    bottom: 0;
+  }
+  .navbar{
+    margin-left: 5%;
+  }
   }
   @media(max-width:767px){
     .navbar a{ display: block; text-align: center;}

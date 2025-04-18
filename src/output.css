@@ -1846,6 +1846,10 @@ footer p{
     top: 50%;
     bottom: 0;
   }
+
+  .navbar{
+    margin-left: 5%;
+  }
 }
 
 @media(max-width:767px){
@@ -2011,24 +2015,12 @@ footer p{
     height: 98px;
   }
 
-  .md\:w-\[325px\]{
-    width: 325px;
+  .md\:w-\[405px\]{
+    width: 405px;
   }
 
   .md\:w-auto{
     width: auto;
-  }
-
-  .md\:w-\[300px\]{
-    width: 300px;
-  }
-
-  .md\:w-\[400px\]{
-    width: 400px;
-  }
-
-  .md\:w-\[405px\]{
-    width: 405px;
   }
 
   .md\:grid-cols-2{
