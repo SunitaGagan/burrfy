@@ -10,36 +10,42 @@
     <link href="./src/owl.carousel.min.css" rel="stylesheet">
     <script src="./src/jquery.min.js"></script>
     <script src="./src/owl.carousel.min.js"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
 </head>
 
 <body>
-    <nav class="sticky shadow-md top-0 z-50  bg-gray-300/80 py-2 flex flex-wrap w-full items-center justify-between">
+    <nav class="sticky shadow-md top-0 z-50 md:h-[98px] bg-gray-300/80 py-2 flex flex-wrap w-full items-center justify-between">
         <div class="container mx-auto relative px-5 lg:px-0">
             <!-- Logo -->
             <div class="flex items-center">
                 <img src="images/logo.png" alt="Logo" class="logo-s" />
             </div>
-            <svg id="mobileIcon" class="h-8 w-8 cursor-pointer absolute right-4 z-20 top-2 md:hidden text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">  <line x1="17" y1="10" x2="3" y2="10" />  <line x1="21" y1="6" x2="3" y2="6" />  <line x1="21" y1="14" x2="3" y2="14" />  <line x1="17" y1="18" x2="3" y2="18" /></svg>
+            <svg id="mobileIcon" class="h-8 w-8 cursor-pointer absolute right-4 z-20 top-2 md:hidden text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="17" y1="10" x2="3" y2="10" />
+                <line x1="21" y1="6" x2="3" y2="6" />
+                <line x1="21" y1="14" x2="3" y2="14" />
+                <line x1="17" y1="18" x2="3" y2="18" />
+            </svg>
             <div class=" hidden w-full md:flex items-center md:w-auto md:justify-center md:absolute md:left-0 md:right-0 md:top-3" id="navbar">
                 <ul class="md:flex md:justify-between pt-4 text-gray-50 md:pt-0 navbar">
-                    <li> <a href="index.html" class="nav-link block md:px-4 lg:px-7 py-2  hover:text-brand"> Home </a></li>
-                    <li> <a href="#" class=" nav-link block md:px-4 lg:px-7 py-2  hover:text-brand"> Browse web </a></li>
-                    <li> <a href="aboutus.html" class=" nav-link block md:px-4 lg:px-7 py-2  hover:text-brand"> About us</a></li>
-                    <li> <a href="contactus.html" class="nav-link block md:px-4 lg:px-7 py-2  hover:text-brand"> Contact us </a></li>
+                    <li> <a href="index.html" class="nav-link block md:px-4 lg:px-7 py-2  hover:text-brand"> Home </a>
+                    </li>
+                    <li> <a href="#" class=" nav-link block md:px-4 lg:px-7 py-2  hover:text-brand"> Browse web </a>
+                    </li>
+                    <li> <a href="aboutus.html" class=" nav-link block md:px-4 lg:px-7 py-2  hover:text-brand"> About
+                            us</a></li>
+                    <li> <a href="contactus.html" class="nav-link block md:px-4 lg:px-7 py-2  hover:text-brand"> Contact
+                            us </a></li>
                 </ul>
-                <div class="md:absolute group drop-nav md:right-0  ">
-                    <a class="bg-brand text-white px-4 py-2 rounded-full flex items-center gap-1 hover:bg-red-700 transition">
-                    Kitchen
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M19 9l-7 7-7-7" />
-                    </svg>
-                     </a>
-                    <div class="absolute hidden group-hover:block bg-gray-300/50 shadow-md rounded-md mt-2 py-2 w-40 text-sm z-10">
+                <div class="md:absolute group drop-nav md:right-0">
+                    <a class="bg-brand text-white px-4 py-2 rounded-full flex items-center gap-1 block hover:bg-red-700 transition">
+                        Kitchen
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
+                    <div class="absolute hidden group-hover:block bg-gray-300/50 shadow-md rounded-md  py-2 w-full text-sm z-10">
                         <a href="#" class="block px-4 py-2 hover:bg-gray-100">Sign in</a>
                         <a href="#" class="block px-4 py-2 hover:bg-gray-100">Sign up</a>
 
@@ -48,11 +54,10 @@
             </div>
         </div>
     </nav>
-    <header class=" pt-8 lg:h-[700px] md:pt-[40px] relative">
+    <header class="pt-8 lg:h-[700px] md:pt-[40px] relative">
         <div class="container mx-auto px-5 lg:px-0">
             <div class="grid grid-cols-12 gap-4">
                 <!-- Left Content -->
-
                 <div class="md:col-span-5 lg:col-span-4 col-span-12 pt-[60px]">
                     <h2 class="text-brand  font-bold mb-3  text-3xl font-alkatra">
                         ।। अन्न हे पूर्ण ब्रह्म ।।</h2>
@@ -62,28 +67,26 @@
                     <div class="ouline-btn">
                         Fresh homemade meals made with care!
                     </div>
-                    <button type="button " class="btn mt-5 mb-10">
+                    <button type="button" class="btn mt-5 mb-10">
                         Explore Kitchens
-                      </button>
+                    </button>
                     <div class="left-bg hidden lg:block">
-                        <img src="images/food-img.png" alt="" /></div>
+                        <img src="images/food-img.png" alt="" />
+                    </div>
                 </div>
                 <!-- Right Image -->
-                <div class="lg:col-span-8 md:col-span-7 col-span-12 right-header-img"><img src="images/header-bg.png " alt=" " class="header-img " /> </div>
+                <div class="lg:col-span-8 md:col-span-7 col-span-12 right-header-img"> <img src="images/header-bg.png " alt=" " class="header-img " /> </div>
             </div>
         </div>
     </header>
-
     <section class="py-[50px]">
-        <div class="container mx-auto px-5 lg:px-0 ">
-
+        <div class="container mx-auto px-5 lg:px-0">
             <div class="grid grid-cols-12 gap-4 items-center">
                 <!-- Left Content -->
-
                 <div class="lg:col-span-6 col-span-12">
                     <div class="md:pr-10">
-                        <sapn class="text-brand text-sm font-semibold uppercase">About Us</sapn>
-                        <h1 class="heading-one mt-0">Welcome to <br/> Burrfy</h1>
+                        <div class="text-brand text-sm font-semibold uppercase">About Us</div>
+                        <h1 class="heading-one mt-0">Welcome to <br /> Burrfy</h1>
                         <p>your go-to destination for delicious food delivered right to your door!</p>
 
                         <div class="pt[100px] reletive">
@@ -94,7 +97,7 @@
                                 At Burrfy, we believe that everyone deserves access to high-quality, delicious meals delivered conveniently. Our mission is to make dining easier and more enjoyable for our customers while supporting local chefs and cloud kitchens.
                             </p>
                             <button type="button" class="btn"> Know more
-                      </button>
+                            </button>
                         </div>
                     </div>
 
@@ -119,11 +122,12 @@
                                 </li>
                             </ul>
                             <div class="">
-                                <ul class="space-y-6 lg:pt-12 text-black vision-list vision-right">
+                                <ul class="space-y-6  text-black vision-list vision-right">
 
                                     <li class=" p-4 shadow-md rounded-l-full">
                                         <h3 class="text-red-600 font-bold text-lg ">Community</h3>
-                                        <p>We’re dedicated to supporting local businesses and fostering community connections.</p>
+                                        <p>We’re dedicated to supporting local businesses and fostering community connections.
+                                        </p>
                                     </li>
                                     <li class=" p-4 shadow-md rounded-l-full">
                                         <h3 class="text-red-600 font-bold text-lg ">Innovation</h3>
@@ -139,12 +143,12 @@
     </section>
 
     <section class="how-to-work">
-        <div class="container mx-auto px-5 lg:px-0 ">
-            <div class="grid grid-cols-12 gap-4 ">
+        <div class="container mx-auto px-5 lg:px-0">
+            <div class="grid grid-cols-12 gap-4 items-center">
                 <div class="col-span-12 lg:col-span-5">
                     <div class="right-heading-block">
-                        <img src="images/how-to-work.png" alt=" " />
-                        <h2 class="heading-three lg:max-w-[300px]">How It Works? </h2>
+                        <img src="images/how-to-work.png" alt=" how to work" />
+                        <h2 class="heading-three lg:max-w-[275px]">How It Works? </h2>
                     </div>
                 </div>
                 <div class="col-span-12 lg:col-span-7">
@@ -180,17 +184,17 @@
                             <p>elusmod tempor incididunt ut labore et dolore</p>
                         </div>
                     </div>
-                    <div class="bg-right hidden xl:block"> <img src="images/food-bg-img.png" alt="" /></div>
                 </div>
             </div>
+        </div>
     </section>
-    <section class="testimonials reletive md:pt-[246px] lg:pt-[140px] md:h-[590px] lg:h-[600px]">
+    <section class="testimonials reletive md:pt-[80px]  md:h-[590px] lg:h-[565px]">
         <div class="container mx-auto px-5 lg:px-0">
-            <div class="grid grid-cols-12 gap-4 items-center ">
-                <div class="col-span-12 md:col-span-4 pl-35">
+            <div class="grid grid-cols-12 gap-4 ">
+                <div class="col-span-12 md:col-span-4 pl-35 pt-5">
                     <div>
                         <span class="text-brand text-sm font-semibold uppercase">TESTIMONIALS</span>
-                        <h1 class="heading-one">What our <br/>food fans <br/> have to say!</h1>
+                        <h1 class="heading-one">What our <br />food fans <br /> have to say!</h1>
                     </div>
                     <div class="left-bg hidden lg:block"> <img src="images/left-bg.png" alt="" /></div>
                 </div>
@@ -213,7 +217,24 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item ">
+                        <div class="item">
+                            <div class="bg-white p-6 rounded-lg shadow-md ">
+                                <div class="flex items-center gap-3 mb-3 ">
+                                    <img src="images/emplyee.jpg" alt="Avatar " class="w-10 h-10 rounded-full ">
+                                    <h2 class="text-red-600 font-semibold text-lg ">Name</h2>
+                                </div>
+                                <p class="text-gray-700 text-sm mb-4 ">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ea commodo consequat
+                                </p>
+                                <div class="flex items-center ">
+                                    <div class="text-yellow-400 text-sm flex gap-1 ">
+                                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                    </div>
+                                    <span class="ml-3 text-gray-800 font-medium ">4.4</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
                             <div class="bg-white p-6 rounded-lg shadow-md ">
                                 <div class="flex items-center gap-3 mb-3 ">
                                     <img src="images/emplyee.jpg" alt="Avatar " class="w-10 h-10 rounded-full ">
@@ -233,7 +254,7 @@
                         <div class="item">
                             <div class="bg-white p-6 rounded-lg shadow-md ">
                                 <div class="flex items-center gap-3 mb-3 ">
-                                    <img src="images/emplyee.jpg" alt="Avatar " class="w-10 h-10 rounded-full ">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg " alt="Avatar " class="w-10 h-10 rounded-full ">
                                     <h2 class="text-red-600 font-semibold text-lg ">Name</h2>
                                 </div>
                                 <p class="text-gray-700 text-sm mb-4 ">
@@ -247,7 +268,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item ">
+                        <div class="item">
                             <div class="bg-white p-6 rounded-lg shadow-md ">
                                 <div class="flex items-center gap-3 mb-3 ">
                                     <img src="https://randomuser.me/api/portraits/men/32.jpg " alt="Avatar " class="w-10 h-10 rounded-full ">
@@ -264,7 +285,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item ">
+                        <div class="item">
                             <div class="bg-white p-6 rounded-lg shadow-md ">
                                 <div class="flex items-center gap-3 mb-3 ">
                                     <img src="https://randomuser.me/api/portraits/men/32.jpg " alt="Avatar " class="w-10 h-10 rounded-full ">
@@ -281,41 +302,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item ">
-                            <div class="bg-white p-6 rounded-lg shadow-md ">
-                                <div class="flex items-center gap-3 mb-3 ">
-                                    <img src="https://randomuser.me/api/portraits/men/32.jpg " alt="Avatar " class="w-10 h-10 rounded-full ">
-                                    <h2 class="text-red-600 font-semibold text-lg ">Name</h2>
-                                </div>
-                                <p class="text-gray-700 text-sm mb-4 ">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ea commodo consequat
-                                </p>
-                                <div class="flex items-center ">
-                                    <div class="text-yellow-400 text-sm flex gap-1 ">
-                                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                                    </div>
-                                    <span class="ml-3 text-gray-800 font-medium ">4.4</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item ">
-                            <div class="bg-white p-6 rounded-lg shadow-md ">
-                                <div class="flex items-center gap-3 mb-3 ">
-                                    <img src="https://randomuser.me/api/portraits/men/32.jpg " alt="Avatar " class="w-10 h-10 rounded-full ">
-                                    <h2 class="text-red-600 font-semibold text-lg ">Name</h2>
-                                </div>
-                                <p class="text-gray-700 text-sm mb-4 ">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ea commodo consequat
-                                </p>
-                                <div class="flex items-center ">
-                                    <div class="text-yellow-400 text-sm flex gap-1 ">
-                                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                                    </div>
-                                    <span class="ml-3 text-gray-800 font-medium ">4.4</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item ">
+                        <div class="item">
                             <div class="bg-white p-6 rounded-lg shadow-md ">
                                 <div class="flex items-center gap-3 mb-3 ">
                                     <img src="https://randomuser.me/api/portraits/men/32.jpg " alt="Avatar " class="w-10 h-10 rounded-full ">
@@ -383,7 +370,24 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item ">
+                        <div class="item">
+                            <div class="bg-white p-6 rounded-lg shadow-md ">
+                                <div class="flex items-center gap-3 mb-3 ">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg " alt="Avatar " class="w-10 h-10 rounded-full ">
+                                    <h2 class="text-red-600 font-semibold text-lg ">Name</h2>
+                                </div>
+                                <p class="text-gray-700 text-sm mb-4 ">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ea commodo consequat
+                                </p>
+                                <div class="flex items-center ">
+                                    <div class="text-yellow-400 text-sm flex gap-1 ">
+                                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                    </div>
+                                    <span class="ml-3 text-gray-800 font-medium ">4.4</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
                             <div class="bg-white p-6 rounded-lg shadow-md ">
                                 <div class="flex items-center gap-3 mb-3 ">
                                     <img src="https://randomuser.me/api/portraits/men/32.jpg " alt="Avatar " class="w-10 h-10 rounded-full ">
@@ -407,10 +411,9 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
-    <section class="our-app ">
+    <section class="our-app">
         <div class="container mx-auto px-5 lg:px-0 ">
             <h1 class="heading-one text-right pb-10"> Discover Our App!</h1>
             <div class="border-bgimg">
@@ -436,8 +439,8 @@
 
                                 <!-- Send Button -->
                                 <button type="submit" class="bg-brand text-white px-8 py-2 rounded-full shadow-md hover:bg-red-700 transition">
-                              Send
-                            </button>
+                                    Send
+                                </button>
                             </form>
                         </div>
                         <div class="col-span-12 md:col-span-6 ">
@@ -454,8 +457,8 @@
                                     <label class="block text-gray-800 font-medium text-xl mb-5">Email address</label>
                                     <input type="email" placeholder="Email address" class="w-full border border-gray-300 rounded px-4 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-red-400" />
                                     <button type="button" class="bg-brand text-white px-6 py-2 rounded-full shadow-md inline-block mt-5 hover:bg-red-700 transition">
-                                Subscribe now
-                              </button>
+                                        Subscribe now
+                                    </button>
                                 </div>
 
                                 <!-- Address Info -->
@@ -466,7 +469,7 @@
                                     </div>
 
                                     <div class="flex items-start">
-                                        <span class="mr-4  mt-1">  <i class="fa-solid fa-phone-volume"></i> </span>
+                                        <span class="mr-4  mt-1"> <i class="fa-solid fa-phone-volume"></i> </span>
                                         <p>8855012291</p>
                                     </div>
                                 </div>
@@ -482,9 +485,9 @@
                             <!-- Accordion Item -->
                             <div class="p-5">
                                 <button onclick="toggleAccordion(0)" class="flex justify-between items-center w-full text-left">
-                        <span class="text-lg font-semibold text-gray-800">How do I place an order?</span>
-                        <span id="icon-0" class="text-2xl">−</span>
-                      </button>
+                                    <span class="text-lg font-semibold text-gray-800">How do I place an order?</span>
+                                    <span id="icon-0" class="text-2xl">−</span>
+                                </button>
                                 <div id="content-0" class="mt-2 text-gray-600">
                                     magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
                                 </div>
@@ -493,9 +496,10 @@
                             <!-- Accordion Item -->
                             <div class="p-5">
                                 <button onclick="toggleAccordion(1)" class="flex justify-between items-center w-full text-left">
-                        <span class="text-lg font-semibold text-gray-800">Can I modify my order after placing it?</span>
-                        <span id="icon-1" class="text-2xl">+</span>
-                      </button>
+                                    <span class="text-lg font-semibold text-gray-800">Can I modify my order after
+                                        placing it?</span>
+                                    <span id="icon-1" class="text-2xl">+</span>
+                                </button>
                                 <div id="content-1" class="mt-2 text-gray-600 hidden">
                                     You can modify the order within 30 minutes by contacting support.
                                 </div>
@@ -504,9 +508,10 @@
                             <!-- Accordion Item -->
                             <div class="p-5">
                                 <button onclick="toggleAccordion(2)" class="flex justify-between items-center w-full text-left">
-                        <span class="text-lg font-semibold text-gray-800">What payment methods do you accept?</span>
-                        <span id="icon-2" class="text-2xl">+</span>
-                      </button>
+                                    <span class="text-lg font-semibold text-gray-800">What payment methods do you
+                                        accept?</span>
+                                    <span id="icon-2" class="text-2xl">+</span>
+                                </button>
                                 <div id="content-2" class="mt-2 text-gray-600 hidden">
                                     We accept UPI, credit/debit cards, net banking, and wallets.
                                 </div>
@@ -515,9 +520,10 @@
                             <!-- Accordion Item -->
                             <div class="p-5">
                                 <button onclick="toggleAccordion(3)" class="flex justify-between items-center w-full text-left">
-                        <span class="text-lg font-semibold text-gray-800">How can I use a discount code?</span>
-                        <span id="icon-3" class="text-2xl">+</span>
-                      </button>
+                                    <span class="text-lg font-semibold text-gray-800">How can I use a discount
+                                        code?</span>
+                                    <span id="icon-3" class="text-2xl">+</span>
+                                </button>
                                 <div id="content-3" class="mt-2 text-gray-600 hidden">
                                     You can apply the discount code at checkout before payment.
                                 </div>
@@ -526,9 +532,10 @@
                             <!-- Accordion Item -->
                             <div class="p-5">
                                 <button onclick="toggleAccordion(4)" class="flex justify-between items-center w-full text-left">
-                        <span class="text-lg font-semibold text-gray-800">What should I do if my order is incorrect or missing items?</span>
-                        <span id="icon-4" class="text-2xl">+</span>
-                      </button>
+                                    <span class="text-lg font-semibold text-gray-800">What should I do if my order is
+                                        incorrect or missing items?</span>
+                                    <span id="icon-4" class="text-2xl">+</span>
+                                </button>
                                 <div id="content-4" class="mt-2 text-gray-600 hidden">
                                     Please contact our customer support immediately to resolve the issue.
                                 </div>
@@ -539,17 +546,19 @@
 
                 </div>
             </div>
-            <div class="max-w-md mx-auto shadow-md px-6 py-16 ">
-                <h2 class="text-2xl font-semibold text-red-700 mb-2 ">Have any other questions?</h2>
-                <p class="text-sm text-brand mb-6 ">Didn't find your answer? Reach out to us!</p>
+            <div class="md:w-[405px] mx-auto  px-6 py-16 text-center ">
+                <h2 class="text-3xl font-semibold text-red-700 mb-2 ">Have any other questions?</h2>
+                <p class="text-xl text-brand mb-6 ">Didn't find your answer? Reach out to us!</p>
 
                 <div class="flex items-center border border-red-300 rounded-lg overflow-hidden ">
-                    <input aria-label="support@burrfy.com " type="text " value="support@burrfy.com " readonly class="flex-grow px-4 py-2 text-sm text-red-700 bg-white focus:outline-none " />
-                    <button type="button " onclick="navigator.clipboard.writeText( 'support@burrfy.com') " class="bg-red-100 hover:bg-red-200 text-red-600 font-semibold text-sm px-4 py-2 transition ">
-                    copy
-                  </button>
+                    <input aria-label="support@burrfy.com" type="text" value="support@burrfy.com" readonly class="flex-grow px-4 py-2 text-sm text-red-700 bg-white focus:outline-none" />
+
+                    <button type="button" onclick="navigator.clipboard.writeText( 'support@burrfy.com') " class="bg-red-100 hover:bg-red-200 text-red-600 font-semibold text-sm px-4 py-2 transition ">
+                        copy
+                    </button>
                 </div>
             </div>
+        </div>
     </section>
     <footer class="bg-gray-100 text-black py-10 px-6 ">
         <div class="container mx-auto px-5 lg:px-0 ">
@@ -573,8 +582,10 @@
                         <h3 class="text-brand font-semibold mb-3 text-xl ">Quick Links</h3>
                         <ul class="space-y-2 text-gray-800 text-xl relative ">
                             <li class="mb-3 "><a href="# " class="hover:text-brand transition-all ease-in duration-300 ">About Us</a></li>
-                            <li class="mb-3 "><a href="# " class="hover:text-brand transition-all ease-in duration-300 ">Privacy Policy</a></li>
-                            <li class="mb-3 "><a href="terms-and-conditions.html " class="hover:text-brand transition-all ease-in duration-300 ">Terms and <br>Conditions</a></li>
+                            <li class="mb-3 "><a href="# " class="hover:text-brand transition-all ease-in duration-300 ">Privacy Policy</a>
+                            </li>
+                            <li class="mb-3 "><a href="terms-and-conditions.html " class="hover:text-brand transition-all ease-in duration-300 ">Terms and
+                                    <br>Conditions</a></li>
                         </ul>
                     </div>
 
@@ -598,20 +609,25 @@
                                     </a>
                                 </li>
                                 <li class="mr-8 ">
-                                    <a href="# " title="instagram " class="text-pink-500 hover:scale-110 transition block "><i class="fab fa-instagram "></i></a>
+                                    <a href="# " title="instagram " class="text-pink-500 hover:scale-110 transition block "><i
+                                            class="fab fa-instagram "></i></a>
                                 </li>
                                 <li class="mr-8 ">
-                                    <a href="# " title="twitter " class="text-blue-400 hover:scale-110 transition block "><i class="fab fa-twitter "></i></a>
+                                    <a href="# " title="twitter " class="text-blue-400 hover:scale-110 transition block "><i
+                                            class="fab fa-twitter "></i></a>
                                 </li>
-                                <li class="mr-8 "> <a href="# " title="youtube " class="text-brand hover:scale-110 transition block "><i class="fab fa-youtube "></i></a></li>
+                                <li class="mr-8 "> <a href="# " title="youtube " class="text-brand hover:scale-110 transition block "><i
+                                            class="fab fa-youtube "></i></a></li>
                                 <li>
-                                    <a href="# " title="pinterest " class="text-red-400 hover:scale-110 transition block "><i class="fab fa-pinterest "></i></a>
+                                    <a href="# " title="pinterest " class="text-red-400 hover:scale-110 transition block "><i
+                                            class="fab fa-pinterest "></i></a>
 
                                 </li>
 
                             </ul>
                         </div>
-                        <button type="button " class="bg-brand text-white rounded-full px-5 py-2 text-xl hover:bg-red-700 transition ">Subscribe to newsletter</button>
+                        <button type="button" class="bg-brand text-white rounded-full px-5 py-2 text-xl hover:bg-red-700 transition ">Subscribe
+                            to newsletter</button>
                     </div>
                 </div>
             </div>
@@ -631,15 +647,19 @@
                 0: {
                     items: 1,
                     nav: false,
+                    dots: false
                 },
                 600: {
                     items: 2,
-                    nav: false
+                    nav: false,
+                    dots: false,
                 },
                 1200: {
                     items: 3,
-                    nav: false,
-                    loop: false
+                    loop: true,
+                    dots: false, // This disables the dots
+                    nav: false
+
                 }
             }
         })

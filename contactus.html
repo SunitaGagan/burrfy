@@ -15,30 +15,37 @@
 </head>
 
 <body>
-    <nav class="sticky shadow-md top-0 z-50  bg-gray-300/80 py-2 flex flex-wrap w-full items-center justify-between">
-        <div class="container mx-auto relative px-5 md:px-0">
+    <nav class="sticky shadow-md top-0 z-50 md:h-[98px] bg-gray-300/80 py-2 flex flex-wrap w-full items-center justify-between">
+        <div class="container mx-auto relative px-5 lg:px-0">
             <!-- Logo -->
             <div class="flex items-center">
                 <img src="images/logo.png" alt="Logo" class="logo-s" />
             </div>
-            <svg id="mobileIcon" class="h-8 w-8 cursor-pointer absolute right-4 z-20 top-2 md:hidden text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">  <line x1="17" y1="10" x2="3" y2="10" />  <line x1="21" y1="6" x2="3" y2="6" />  <line x1="21" y1="14" x2="3" y2="14" />  <line x1="17" y1="18" x2="3" y2="18" /></svg>
+            <svg id="mobileIcon" class="h-8 w-8 cursor-pointer absolute right-4 z-20 top-2 md:hidden text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="17" y1="10" x2="3" y2="10" />
+                <line x1="21" y1="6" x2="3" y2="6" />
+                <line x1="21" y1="14" x2="3" y2="14" />
+                <line x1="17" y1="18" x2="3" y2="18" />
+            </svg>
             <div class=" hidden w-full md:flex items-center md:w-auto md:justify-center md:absolute md:left-0 md:right-0 md:top-3" id="navbar">
                 <ul class="md:flex md:justify-between pt-4 text-gray-50 md:pt-0 navbar">
-                    <li> <a href="index.html" class="nav-link block md:px-7 py-2  hover:text-brand"> Home </a></li>
-                    <li> <a href="#" class=" nav-link block md:px-7 py-2  hover:text-brand"> Browse web </a></li>
-                    <li> <a href="aboutus.html" class=" nav-link block md:px-7 py-2  hover:text-brand"> About us</a></li>
-                    <li> <a href="contactus.html" class="nav-link block md:px-7 py-2  hover:text-brand"> Contact us </a></li>
+                    <li> <a href="index.html" class="nav-link block md:px-4 lg:px-7 py-2  hover:text-brand"> Home </a>
+                    </li>
+                    <li> <a href="#" class=" nav-link block md:px-4 lg:px-7 py-2  hover:text-brand"> Browse web </a>
+                    </li>
+                    <li> <a href="aboutus.html" class=" nav-link block md:px-4 lg:px-7 py-2  hover:text-brand"> About
+                            us</a></li>
+                    <li> <a href="contactus.html" class="nav-link block md:px-4 lg:px-7 py-2  hover:text-brand"> Contact
+                            us </a></li>
                 </ul>
-
-                <div class="md:absolute group drop-nav md:right-0  ">
-                    <a class="bg-brand text-white px-4 py-2 rounded-full flex items-center gap-1 hover:bg-red-700 transition">
-                    Kitchen
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M19 9l-7 7-7-7" />
-                    </svg>
-                     </a>
-                    <div class="absolute hidden group-hover:block bg-gray-300/50 shadow-md rounded-md mt-2 py-2 w-40 text-sm z-10">
+                <div class="md:absolute group drop-nav md:right-0">
+                    <a class="bg-brand text-white px-4 py-2 rounded-full flex items-center gap-1 block hover:bg-red-700 transition">
+                        Kitchen
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
+                    <div class="absolute hidden group-hover:block bg-gray-300/50 shadow-md rounded-md  py-2 w-full text-sm z-10">
                         <a href="#" class="block px-4 py-2 hover:bg-gray-100">Sign in</a>
                         <a href="#" class="block px-4 py-2 hover:bg-gray-100">Sign up</a>
 
@@ -174,15 +181,16 @@
 
                 </div>
             </div>
-            <div class="max-w-md mx-auto  px-6 py-16 text-center">
-                <h2 class="text-2xl font-semibold text-red-700 mb-2">Have any other questions?</h2>
-                <p class="text-sm text-brand mb-6">Didn't find your answer? Reach out to us!</p>
+            <div class="md:w-[405px] mx-auto  px-6 py-16 text-center ">
+                <h2 class="text-3xl font-semibold text-red-700 mb-2 ">Have any other questions?</h2>
+                <p class="text-xl text-brand mb-6 ">Didn't find your answer? Reach out to us!</p>
 
-                <div class="flex items-center border border-red-300 rounded-lg overflow-hidden">
+                <div class="flex items-center border border-red-300 rounded-lg overflow-hidden ">
                     <input aria-label="support@burrfy.com" type="text" value="support@burrfy.com" readonly class="flex-grow px-4 py-2 text-sm text-red-700 bg-white focus:outline-none" />
-                    <button type="button" onclick="navigator.clipboard.writeText('support@burrfy.com')" class="bg-red-100 hover:bg-red-200 text-red-600 font-semibold text-sm px-4 py-2 transition">
-                    copy
-                  </button>
+
+                    <button type="button" onclick="navigator.clipboard.writeText( 'support@burrfy.com') " class="bg-red-100 hover:bg-red-200 text-red-600 font-semibold text-sm px-4 py-2 transition ">
+                        copy
+                    </button>
                 </div>
             </div>
     </section>
