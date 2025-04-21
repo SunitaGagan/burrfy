@@ -199,7 +199,7 @@ bottom: -20px;
     @apply text-brand font-beiruti;
     font-weight: bold; line-height: 51px;}
   .right-heading-block { @apply relative;}
-  .heading-two{@apply bg-white text-red-600 font-bold px-6 py-2 rounded-full shadow-lg text-lg block mx-auto w-44 text-2xl mt-4; }
+  .heading-two{@apply bg-white text-red-600 font-bold px-6 py-2 rounded-full shadow-lg block mx-auto w-44 text-2xl mt-4; }
   .owl-carousel.bg-testimonials .item img {
     @apply w-10 h-10;
   }
@@ -266,6 +266,7 @@ bottom: -20px;
   }
   }
   @media(max-width:767px){
+    .navbar >li{@apply mb-2;}
     .navbar a{ display: block; text-align: center;}
   .bg-testimonials {@apply bg-cover rounded-[50px] py-10  px-10 relative;}
   .testimonials h1{ text-align: center;}

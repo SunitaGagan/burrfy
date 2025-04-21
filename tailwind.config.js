@@ -10,6 +10,7 @@ module.exports = {
             },
             colors: {
                 brand: "#B7121F", // custom color
+                black: "#333",
             },
             fontSize: {
                 "heading-xl": "3.188rem",
