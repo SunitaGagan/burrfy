@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>burrfy</title>
     <link href="./src/output.css" rel="stylesheet">
+    <link href="./src/custom.css" rel="stylesheet">
     <script src="./src/script.js"></script>
     <link href="./src/owl.carousel.min.css" rel="stylesheet">
     <script src="./src/jquery.min.js"></script>
     <script src="./src/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="sticky shadow-md top-0 z-50 md:h-[98px] bg-gray-300/80 py-2 flex flex-wrap w-full items-center justify-between">
+    <nav class="sticky shadow-md top-0 z-50 md:h-[98px] bg-gray-300 opacity-80 py-2 flex flex-wrap w-full items-center justify-between">
         <div class="container mx-auto relative px-5 lg:px-0">
             <!-- Logo -->
             <div class="flex items-center">
@@ -27,7 +27,7 @@
                 <line x1="21" y1="14" x2="3" y2="14" />
                 <line x1="17" y1="18" x2="3" y2="18" />
             </svg>
-            <div class=" hidden w-full md:flex items-center md:w-auto md:justify-center md:absolute md:left-0 md:right-0 md:top-3" id="navbar">
+            <div class="hidden w-full md:flex items-center md:w-auto md:justify-center md:absolute md:left-0 md:right-0 md:top-3" id="navbar">
                 <ul class="md:flex md:justify-between pt-4 text-gray-50 md:pt-0 navbar">
                     <li> <a href="index.html" class="nav-link block md:px-4 lg:px-7 py-2  hover:text-brand"> Home </a>
                     </li>
@@ -38,8 +38,8 @@
                     <li> <a href="contactus.html" class="nav-link block md:px-4 lg:px-7 py-2  hover:text-brand"> Contact
                             us </a></li>
                 </ul>
-                <div class="md:absolute group drop-nav md:right-0">
-                    <a class="bg-brand text-white px-4 py-2 rounded-full flex items-center gap-1  hover:bg-red-700 transition">
+                <div class="md:absolute group drop-nav md:right-0 text-center md:text-left">
+                    <a class="bg-brand text-white px-4 py-2 rounded-full flex items-center gap-1 justify-center md:justify-start hover:bg-red-700 transition">
                         Kitchen
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -57,10 +57,10 @@
     <!-- start about section-->
     <section class="about-section">
         <div class="container mx-auto px-5 md:px-0">
-            <div class="grid grid-cols-12 gap-4">
-                <div class="col-span-12 lg:col-span-5 lg:pr-6">
-                    <div class="grid grid-cols-12 gap-8">
-                        <div class="col-span-6">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-2/5 lg:pr-20">
+                    <div class="flex flex-wrap -mx-3">
+                        <div class="w-1/2 px-3">
                             <div class="w-full bg-brand text-white rounded-full px-6 py-10 text-center flex flex-col items-center justify-center aspect-[2/3] mb-3">
                                 <div class="text-3xl font-bold mb-2">B</div>
                                 <div class="text-lg font-semibold">Bite</div>
@@ -87,7 +87,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-span-6">
+                        <div class="w-1/2 px-3">
                             <div class="w-full bg-brand text-white rounded-full px-6 py-10 text-center flex flex-col items-center justify-center aspect-[2/3] mb-3 mt-[100px]">
                                 <div class="text-3xl font-bold mb-2">U</div>
                                 <div class="text-lg font-semibold">User </div>
@@ -114,9 +114,8 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-span-12 lg:col-span-7 lg:pl-6">
+                <div class="w-full lg:w-3/5 lg:pl-8">
                     <div class="">
                         <h1 class="heading-one"> Bringing Ultimate <br />Recipes & Real Flavour to You </h1>
                         <p> Burrfy app is a medium that connects the consumer and the home cook, in which the consumer will never feel outside, will feel that the food is prepared at his own home, delicious and will have a sense of purpose. It is our hope
@@ -126,8 +125,8 @@
                         <p> At Burrfy, we're revolutionizing the food delivery experience by focusing on quality, convenience, and personalized service. Whether you’re craving a quick snack or a gourmet meal, Burrfy is your go-to food app for discovering
                             new Kitchen, ordering meals, and having them delivered right to your door in no time.</p>
                     </div>
-                    <div class="grid grid-cols-12 gap-4 reb-box">
-                        <div class="col-span-12 md:col-span-7 ">
+                    <div class="flex flex-wrap reb-box md:-mx-3">
+                        <div class="w-full md:w-3/5 md:px-3">
                             <div class="w-full p-6 bg-brand text-white rounded-tl-lg rounded-br-lg shadow-lg">
                                 <h2 class="text-xl font-semibold mb-4 text-center"> Dietary Preferences</h2>
                                 <p class="text-sm text-center leading-relaxed text-white">
@@ -135,7 +134,7 @@
                                 </p>
                             </div>
 
-                            <div class="w-full p-6 bg-brand text-white rounded-tl-lg rounded-br-lg shadow-lg mt-4">
+                            <div class="w-full p-6 bg-brand text-white rounded-tl-lg rounded-br-lg shadow-lg mt-4 mb-4 md:mb-0">
                                 <h2 class="text-xl font-semibold mb-4 text-center">Food Safety and Hygiene Standards</h2>
                                 <p class=" text-sm text-center leading-relaxed text-white">
                                     We ensure that all food vendors participating in the platform adhere to local food safety standards and health regulations. Vendors are required to maintain proper hygiene practices during food preparation and delivery, including using clean and sanitized
@@ -143,7 +142,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-span-12 bg-brand rounded-tl-lg rounded-br-lg shadow-lg items-center flex md:col-span-5">
+                        <div class="w-full bg-brand rounded-tl-lg rounded-br-lg shadow-lg items-center flex  md:w-2/5">
                             <div class="w-full p-6  text-white place-items-center">
                                 <h2 class="text-xl font-semibold mb-4 text-center"> Nutritional Information</h2>
                                 <p class="text-center text-sm leading-relaxed text-white">
@@ -157,16 +156,16 @@
     </section>
     <section>
         <div class="container mx-auto px-5 md:px-0">
-            <div class="grid grid-cols-12 gap-4">
-                <div class="col-span-12 md:col-span-6">
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/2">
                     <h1 class="heading-one"> Our Team </h1>
                     <p> Meet our dedicated team of food lovers and tech enthusiasts who work tirelessly to ensure a seamless experience for our users!</p>
 
                 </div>
             </div>
 
-            <div class="grid grid-cols-12 gap-9">
-                <div class="col-span-12 md:col-span-4">
+            <div class="flex flex-wrap md:-mx-3">
+                <div class="w-full md:w-1/3 md:px-3 mb-3 mb:mb-0">
                     <div class="bg-white  rounded-2xl shadow-lg p-6 text-center relative">
                         <!-- Leaf background -->
                         <div class="absolute top-0 right-0 w-1/2 h-1/3 overflow-hidden rounded-tr-2xl">
@@ -204,7 +203,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-span-12 md:col-span-4">
+                <div class="w-full md:w-1/3 md:px-3 mb-3 mb:mb-0">
                     <div class="bg-white  rounded-2xl shadow-lg p-6 text-center relative">
                         <!-- Leaf background -->
                         <div class="absolute top-0 right-0 w-1/2 h-1/3 overflow-hidden rounded-tr-2xl">
@@ -242,7 +241,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-span-12 md:col-span-4">
+                <div class="w-full md:w-1/3 md:px-3 mb-3 mb:mb-0">
                     <div class="bg-white  rounded-2xl shadow-lg p-6 text-center relative">
                         <!-- Leaf background -->
                         <div class="absolute top-0 right-0 w-1/2 h-1/3 overflow-hidden rounded-tr-2xl">
@@ -285,8 +284,8 @@
     </section>
     <section class="relative z-10 pt-10 joinus-section">
         <div class="container mx-auto px-5 md:px-0">
-            <div class="grid grid-cols-12 gap-4">
-                <div class="col-span-12 md:col-span-6">
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/2">
                     <h2 class="heading-one"> Join Us </h2>
                     <p> Whether you’re looking to indulge in a delicious meal or you’re a cook interested in joining our platform, we invite you to be a part of the Burrfy community! </p>
                     <ul class="flex">
@@ -298,7 +297,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-span-12 md:col-span-6">
+                <div class="w-full md:w-1/2">
                     <img src="images/img-app.png" alt="" />
                 </div>
             </div>
@@ -309,27 +308,24 @@
         <div> <img src="images/bg-img.png" alt="" /> </div>
     </section>
     <!-- footer -->
-    <footer class="bg-gray-100 text-black py-10 px-6">
-        <div class="container mx-auto px-5 md:px-0">
-            <div class="grid grid-cols-12 gap-4">
-                <div class="col-span-12 lg:col-span-4 ">
+    <footer class="bg-gray-100 text-black py-10 px-6 ">
+        <div class="container mx-auto px-5 lg:px-0">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-1/4 mb-5 md:mb-0">
                     <!-- Logo and Description -->
-                    <div class="space-y-4 line-right">
-
-                        <img src="images/logo.png" alt="Burrfy Logo" class="min-w-28 h-auto" />
-
-
-                        <p class="text-xl text-gray-700 text-justify">
+                    <div class="space-y-4 line-right ">
+                        <img src="images/logo.png " alt="Burrfy Logo " class="min-w-28 h-auto" />
+                        <p class="text-xl text-gray-700 text-justify ">
                             Burrfy app is a medium that connects the consumer and the home cook, in which the consumer will never feel outside, will feel that the food is prepared at his own home, delicious.
                         </p>
                     </div>
 
                 </div>
-                <div class="col-span-12 lg:col-span-5 flex line-right">
+                <div class="w-full lg:w-2/5 lg:flex line-right ">
                     <!-- Quick Links -->
-                    <div class="w-1/2">
-                        <h3 class="text-brand font-semibold mb-3 text-xl">Quick Links</h3>
-                        <ul class="space-y-2 text-gray-800 text-xl relative">
+                    <div class="md:w-1/2 w-full md:mb-0 mb-5">
+                        <h3 class="text-brand font-semibold mb-3 text-xl ">Quick Links</h3>
+                        <ul class="space-y-2 text-gray-800 text-xl relative ">
                             <li class="mb-3"><a href="aboutus.html" class="hover:text-brand transition-all ease-in duration-300">About Us</a></li>
                             <li class="mb-3"><a href="privacy-policy.html" class="hover:text-brand transition-all ease-in duration-300">Privacy Policy</a></li>
                             <li class="mb-3"><a href="terms-and-conditions.html" class="hover:text-brand transition-all ease-in duration-300">Terms and
@@ -338,52 +334,54 @@
                     </div>
 
                     <!-- Contact Us -->
-                    <div class="md:pl-6 w-1/2">
-                        <h3 class="text-brand font-semibold mb-3 text-xl">Contact Us</h3>
+                    <div class="md:pl-6 md:w-1/2 w-full mb-4 md:md-0">
+                        <h3 class="text-brand font-semibold mb-3 text-xl ">Contact Us</h3>
                         <p class="text-xl text-gray-800 ">122, HB Estate, Near Sonegaon Lake, Sonegaon, Nagpur.</p>
-                        <p class="text-xl text-gray-800 mt-2">support@burrfy.com</p>
-                        <p class="text-xl text-gray-800 mt-2">+91 88550 12291</p>
+                        <p class="text-xl text-gray-800 mt-2 ">support@burrfy.com</p>
+                        <p class="text-xl text-gray-800 mt-2 ">+91 88550 12291</p>
                     </div>
                 </div>
-                <div class="col-span-12 lg:col-span-3">
+                <div class="w-full lg:w-1/4">
                     <!-- Social and Newsletter -->
-                    <div class="space-y-4">
-                        <h3 class="text-brand font-semibold text-xl">Stay up to date</h3>
-                        <div class="flex gap-3 text-xl">
-                            <ul class="flex justify-center py-1">
-                                <li class="mr-8">
-                                    <a href="#" title="Facebook" class="text-blue-600 hover:scale-110 transition block">
-                                        <i class="fab fa-facebook"></i>
+                    <div class="space-y-4 ">
+                        <h3 class="text-brand font-semibold text-xl ">Stay up to date</h3>
+                        <div class="flex gap-3 text-xl ">
+                            <ul class="flex justify-center py-1 ">
+                                <li class="mr-8 ">
+                                    <a href="# " title="Facebook " class="text-blue-600 hover:scale-110 transition block ">
+                                        <i class="fab fa-facebook "></i>
                                     </a>
                                 </li>
-                                <li class="mr-8">
-                                    <a href="#" title="instagram" class="text-pink-500 hover:scale-110 transition block"><i
-                                            class="fab fa-instagram"></i></a>
+                                <li class="mr-8 ">
+                                    <a href="# " title="instagram " class="text-pink-500 hover:scale-110 transition block "><i
+                                            class="fab fa-instagram "></i></a>
                                 </li>
-                                <li class="mr-8">
-                                    <a href="#" title="twitter" class="text-blue-400 hover:scale-110 transition block"><i
-                                            class="fab fa-twitter"></i></a>
+                                <li class="mr-8 ">
+                                    <a href="# " title="twitter " class="text-blue-400 hover:scale-110 transition block "><i
+                                            class="fab fa-twitter "></i></a>
                                 </li>
-                                <li class="mr-8"> <a href="#" title="youtube" class="text-brand hover:scale-110 transition block"><i
-                                            class="fab fa-youtube"></i></a></li>
+                                <li class="mr-8 "> <a href="# " title="youtube " class="text-brand hover:scale-110 transition block "><i
+                                            class="fab fa-youtube "></i></a></li>
                                 <li>
-                                    <a href="#" title="pinterest" class="text-red-400 hover:scale-110 transition block"><i
-                                            class="fab fa-pinterest"></i></a>
+                                    <a href="# " title="pinterest " class="text-red-400 hover:scale-110 transition block "><i
+                                            class="fab fa-pinterest "></i></a>
+
                                 </li>
 
                             </ul>
                         </div>
-                        <button type="button" class="bg-brand text-white rounded-full px-5 py-2 text-xl hover:bg-red-700 transition">Subscribe
+                        <button type="button" class="bg-brand text-white rounded-full px-5 py-2 text-xl hover:bg-red-700 transition ">Subscribe
                             to newsletter</button>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Bottom Bar -->
-        <div class="mt-10 text-center text-brand text-xl">
+        <div class="mt-10 text-center text-brand text-xl ">
             © Burrfy
         </div>
     </footer>
+
 
 
 </body>

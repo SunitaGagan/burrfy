@@ -1,53 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body{
-  background-image: url('../images/bg.svg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat:no-repeat;
-  background-attachment: fixed;
-}
-.min-w-22{
-  min-width: 188px; 
-}
+
 .navbar >li{ @apply pl-1 pr-1;}
-.navbar a{
-  color: #333;
-  font-size: 21px;
-  transition: 0.2s ease-in all;
+.navbar a{  
  @apply rounded-full;
 }
-.navbar a:hover{
-  color: #fff;
-  background-color: #B7121F;
-  
-}
-@media screen and (min-width: 1024px) {
-  .line-right{
-    padding-right: 80px;
-    position: relative;
-  
-  }
-  .line-right::before{
-    content: "";
-      border-right: 1px solid #444;
-      position: absolute;
-      left: 0;
-      right: 40px;
-      margin: auto;
-      top: 0;
-      bottom: 0;
-  
-  }
-}
-.vision-list >li{ 
-  background-color: #fff;
-  font-size:22px;    
-}
+
 @media screen and (min-width: 768px) {  
   
   .vision-list >li p{margin-bottom: 0; @apply text-xl; }
@@ -57,42 +17,8 @@ body{
   .vision-list{ margin-bottom: 30px;}
   .vision-list>li{ margin-bottom: 50px;}
 }
-.border-bgimg {
-  position: relative;
-  padding: 0 90px;
-  z-index: 9;
-}
-.border-bgimg::before {
-content: "";
-position: absolute;
-left: 0;
-background-image: url("../images/leaf-border.png");
-background-repeat: repeat-y;
-width: 55px;
-top: 0;
-z-index: 12;
-height: 100%;
-bottom: -20px;
-}
-.border-bgimg::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  background-image: url("../images/leaf-border.png");
-  background-repeat: repeat-y;
-  width: 55px;
-  top: 0;
-  z-index: 12;
-  height: 100%; 
-  }
-  .bg-red-drak{
-    background-color: #B7121F;
-  }
   .heading-one {
-    @apply  text-brand font-beiruti font-bold;
-    font-size: 3.75rem;
-    line-height:3rem;
-    margin-bottom: 1.875rem;
+    @apply text-brand font-beiruti font-bold text-[3.75rem] leading-[3rem] mb-[1.875rem];
   }
   p{color: #333; 
     font-size: 1.313rem;
@@ -103,26 +29,22 @@ bottom: -20px;
    @apply bg-cover relative bg-no-repeat bg-center  rounded-[4rem] py-3;
     background-image: url('../images/bg-green-leaf.png');
   }
-  .bg-testimonials {
-     background-image: url('../images/testimonials-bg.png');
-     position: relative;
-  }
-  .testimonials { position: relative;}
-  .right-side-carousel:before,
-  .right-side-carousel::after{
+  
+  .quotation-icon:before,
+  .quotation-icon::after{
     @apply w-[100px] h-[100px] absolute; 
     
   }
-  .right-side-carousel:before{ 
+  .quotation-icon:before{ 
     content:"";
    @apply -left-[90px] -top-[80px];
     background-image: url('../images/quotation-top.png');
     
   }
-  .right-side-carousel::after { 
+  .quotation-icon::after { 
     content:"";   
     background-image: url('../images/quotation-bottom.png');
-    @apply bottom-0 right-0;  
+    @apply -bottom-[90px] right-0;  
   }
   .drop-nav a{
     font-size: 21px;
@@ -140,45 +62,17 @@ bottom: -20px;
   .vision-list h3{
     @apply text-xl text-brand mb-2; 
   }
-  .terms-condition,
-  .about-section,
-  .contact-section {
-    padding:5.375rem 0;   
-  }
-  .terms-condition h2,
-  .terms-condition p,
-  .terms-condition ul >li{
-    color:#333;
-    font-size:1.313rem;
-  }
-  .terms-condition h1{
-    margin-bottom: 4rem;
-  }
-  .terms-condition h2{ margin-bottom: 1rem;}
-  .bgbuttom{position: relative;   
-    z-index: 0;}
+  
     .joinus-section h2{
       @apply font-bold mb-8;
     }
     .joinus-section p{
       @apply mb-10
     }
-    .joinus-section img{
-      width: 100%;
-      height: auto;
+    footer p {
+      @apply mb-0;
     }
-  @media screen and (max-width: 1199px) {
-    .terms-condition,
-    .about-section,.contact-section {padding: 5.375rem 0;}
-  }
-  footer p {
-    @apply mb-0;
-  }
-  .nav-link.active {
-    color: #fff;
-  background-color: #B7121F;
-
-  }
+  
 
   .ouline-btn{
     @apply bg-brand text-white py-3 px-6 rounded-full text-lg mb-4 inline-block shadow-md
@@ -192,7 +86,6 @@ bottom: -20px;
   .how-to-work{@apply relative;}
   .how-to-work p{ @apply mb-0;}
   .heading-three{@apply absolute z-10 ;
-
     margin: auto;
     text-align: center;
     font-size: 55px;
@@ -234,14 +127,9 @@ bottom: -20px;
       margin-left: auto;
       right: 0;
     }
-   .right-header-img { @apply absolute right-0 left-[40%];}
+   .right-header-img { @apply absolute right-0;}
   }
-  @media  (max-width: 1023px) and (min-width: 768px) {
-    .heading-one{ font-size: 2.75rem; line-height: 2.75rem;}
-    .navbar a, .drop-nav a{ font-size: 1.125rem;}  
-    
-
-  }
+  
   @media (max-width: 1023px){
     .right-heading-block img {
       @apply hidden;      
@@ -253,31 +141,27 @@ bottom: -20px;
 
   }
   @media (min-width: 1024px){
-  .bgbuttom{ margin-top: -300px;}
-  .heading-three{ 
-    left:14%;
-    right: auto;
-    z-index: 10;
-    top: 50%;
-    bottom: 0;
+    .bgbuttom{ margin-top: -300px;}
+    .heading-three{ 
+      left:14%;
+      right: auto;
+      z-index: 10;
+      top: 50%;
+      bottom: 0;
+    }
+    .navbar{
+     margin-left: 5%;
+    }
   }
-  .navbar{
-    margin-left: 5%;
-  }
-  }
-  @media(max-width:767px){
+  @media(max-width:767px){    
     .navbar >li{@apply mb-2;}
     .navbar a{ display: block; text-align: center;}
-  .bg-testimonials {@apply bg-cover rounded-[50px] py-10  px-10 relative;}
-  .testimonials h1{ text-align: center;}
-  .testimonials br{ @apply hidden;}
-  .right-side-carousel{ @apply relative mb-10 mt-11;}
-  .right-side-carousel::before{ @apply left-0;}
-  
-  .vision-left{@apply mt-6;}
-  .vision-list >li{@apply rounded-full p-6 mb-4 text-center; }
-  .bg-vision{@apply p-6;}
+    .bg-testimonials {@apply bg-cover rounded-[50px] py-10  px-10 relative;}
+    .testimonials h1{ text-align:left;}
+    .testimonials br{ @apply hidden;}
+    .right-side-carousel{ @apply relative mb-10 mt-11;}
+    .quotation-icon::before{ @apply left-0;}  
+    .vision-left{@apply mt-6;}
+    .vision-list >li{@apply rounded-[40px] p-6 mb-4 text-center; }
+    .bg-vision{@apply p-6;}
 }
-.border-bg{ background-image: url(../images/border-horizontal.png);  background-repeat: repeat-x; height: 53px; margin-bottom: 30px;}
-  @media  (max-width: 1279px) and (min-width: 1024px) {
-  }
