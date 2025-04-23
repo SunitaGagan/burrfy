@@ -153,4 +153,7 @@ body {
   .quotation-icon{
     margin-bottom: 60px;
   }
+  .heading-one{
+    line-height: 3.8rem;
+  }
 }
