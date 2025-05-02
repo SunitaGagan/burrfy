@@ -17,7 +17,7 @@ body {
 }
 .navbar a {
   color: #333;
-  font-size: 21px;
+  font-size: 19px;
   transition: 0.2s ease-in all;
 }
 @media screen and (min-width: 1024px) {
@@ -42,7 +42,7 @@ body {
 }
 .border-bgimg {
   position: relative;
-  padding: 0 90px;
+  padding: 0 80px;
   z-index: 9;
 }
 .border-bgimg::before {
@@ -51,11 +51,12 @@ body {
   left: 0;
   background-image: url("../images/leaf-border.png");
   background-repeat: repeat-y;
-  width: 55px;
+  width: 30px;
   top: 0;
   z-index: 12;
   height: 100%;
   bottom: -20px;
+  background-size: contain;
 }
 .border-bgimg::after {
   content: "";
@@ -63,10 +64,11 @@ body {
   right: 0;
   background-image: url("../images/leaf-border.png");
   background-repeat: repeat-y;
-  width: 55px;
+  width: 30px;
   top: 0;
   z-index: 12;
   height: 100%;
+  background-size: contain;
 }
 .bg-red-drak {
   background-color: #b7121f;
@@ -124,8 +126,9 @@ body {
 .border-bg {
   background-image: url(../images/border-horizontal.png);
   background-repeat: repeat-x;
-  height: 53px;
+  height: 30px;
   margin-bottom: 30px;
+  background-size: contain;
 }
 @media screen and (min-width: 599px) {
   .bg-testimonials {
