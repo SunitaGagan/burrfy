@@ -1206,6 +1206,10 @@ video {
   padding-top: 40px;
 }
 
+.pr-0 {
+  padding-right: 0px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1946,6 +1950,14 @@ footer p {
 
   .md\:pt-\[80px\] {
     padding-top: 80px;
+  }
+
+  .md\:pr-6 {
+    padding-right: 1.5rem;
+  }
+
+  .md\:pr-\[50px\] {
+    padding-right: 50px;
   }
 
   .md\:text-left {
