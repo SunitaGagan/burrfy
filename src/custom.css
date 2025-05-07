@@ -123,6 +123,7 @@ body {
     font-size: 1.125rem;
   }
 }
+.drop-nav{ right: 20px;}
 .border-bg {
   background-image: url(../images/border-horizontal.png);
   background-repeat: repeat-x;
@@ -175,5 +176,9 @@ body {
     display: block;
     width: fit-content;
   }
+}
+@media (min-width: 2000px){
+  .right-header-img{ width: 50% ;}
+  .header-img{max-width: 100%; width: auto; height: 640px;} 
 
 }

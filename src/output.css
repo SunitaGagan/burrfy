@@ -1178,6 +1178,10 @@ video {
   padding-left: 1.75rem;
 }
 
+.pr-0 {
+  padding-right: 0px;
+}
+
 .pr-5 {
   padding-right: 1.25rem;
 }
@@ -1204,10 +1208,6 @@ video {
 
 .pt-\[40px\] {
   padding-top: 40px;
-}
-
-.pr-0 {
-  padding-right: 0px;
 }
 
 .text-left {
@@ -1682,15 +1682,21 @@ footer p {
 
   .header-img {
     height: auto;
-    max-width: 100%;
-    position: absolute;
+    width: 100%;
     margin-left: auto;
     right: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: left;
+       object-position: left;
   }
 
   .right-header-img {
     position: absolute;
     right: 0px;
+    top: 60px;
+    height: 100%;
+    padding-left: 20px;
   }
 }
 
@@ -1918,11 +1924,6 @@ footer p {
     border-bottom-right-radius: 9999px;
   }
 
-  .md\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .md\:px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
@@ -1940,6 +1941,10 @@ footer p {
     padding-right: 6rem;
   }
 
+  .md\:pr-\[50px\] {
+    padding-right: 50px;
+  }
+
   .md\:pt-12 {
     padding-top: 3rem;
   }
@@ -1950,14 +1955,6 @@ footer p {
 
   .md\:pt-\[80px\] {
     padding-top: 80px;
-  }
-
-  .md\:pr-6 {
-    padding-right: 1.5rem;
-  }
-
-  .md\:pr-\[50px\] {
-    padding-right: 50px;
   }
 
   .md\:text-left {
@@ -2093,11 +2090,6 @@ footer p {
     background-color: rgb(209 213 219 / 0.5);
   }
 
-  .xl\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .xl\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -2107,3 +2099,5 @@ footer p {
     text-align: left;
   }
 }
+
+

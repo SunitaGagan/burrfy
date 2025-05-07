@@ -122,12 +122,13 @@
     } 
    
     .header-img{ @apply h-auto;
-      max-width: 100%;
-      position: absolute;
+      width: 100%;     
       margin-left: auto;
       right: 0;
+      object-fit: cover;
+      object-position: left;
     }
-   .right-header-img { @apply absolute right-0;}
+   .right-header-img { @apply absolute right-0  h-full top-[60px] pl-[20px];}
   }
   
   @media (max-width: 1023px){
@@ -171,3 +172,5 @@
     .vision-list >li{@apply rounded-[40px] p-6 mb-4 text-center; }
     .bg-vision{@apply p-6;}
 }
+
+
